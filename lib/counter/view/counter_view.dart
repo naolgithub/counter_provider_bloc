@@ -20,7 +20,7 @@ class CounterView extends StatelessWidget {
       ),
       floatingActionButton: Column(
         mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           FloatingActionButton(
             key: const Key('counterView_increment_floatingActionButton'),
