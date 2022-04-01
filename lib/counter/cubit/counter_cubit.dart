@@ -6,6 +6,7 @@ class CounterCubit extends Cubit<int> {
 
   /// Add 1 to the current state.
   void increment() => emit(state + 1);
+  /// Add 2 to the current state.
   void evenNumber() => emit(state+2);
 
   /// Subtract 1 from the current state.
