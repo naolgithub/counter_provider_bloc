@@ -27,11 +27,17 @@ class CounterView extends StatelessWidget {
             child: const Icon(Icons.add),
             onPressed: () => context.read<CounterCubit>().increment(),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 3),
           FloatingActionButton(
             key: const Key('counterView_decrement_floatingActionButton'),
             child: const Icon(Icons.remove),
             onPressed: () => context.read<CounterCubit>().decrement(),
+          ),
+           const SizedBox(height: 3),
+          FloatingActionButton(
+            key: const Key('counterView_evenNumber_floatingActionButton'),
+            child: const Icon(Icons.face_rounded),
+            onPressed: () => context.read<CounterCubit>().evenNumber(),
           ),
         ],
       ),
